@@ -64,3 +64,11 @@ console.log(totalPrice)
 
 // 4: Concatenate Product Names
 console.log(products.reduce((sum, a) => sum = sum  + a.product, ''))
+
+// 5: Find Extremes in Prices
+const sortedProducts = products.filter((products) => products.price !== ' ' && products.price !== '').sort((a, b) => Number(a.price) - Number(b.price));
+const highestPriceItem = sortedProducts[sortedProducts.length - 1];
+const lowestPriceItem = sortedProducts[0];
+
+const result = `Highest: ${highestPriceItem.product} (R${highestPriceItem.price}). Lowest: ${lowestPriceItem.product} (R${lowestPriceItem.price}).`;
+console.log(result);
