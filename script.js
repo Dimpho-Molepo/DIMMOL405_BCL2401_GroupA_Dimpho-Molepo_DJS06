@@ -20,3 +20,6 @@ console.log(names.map((name) => name.length))
 
 // 4: Sorting
 console.log(provinces.sort())
+
+// 5: Filtering Cape
+console.log(provinces.filter((province) => !province.includes('Cape')))
