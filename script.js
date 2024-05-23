@@ -48,4 +48,15 @@ const products = [
 // 1: Log Products
 products.forEach((products) => console.log(products.product))
 
+// 2: Price Manipulation
+const productsWithoutPrices = products.filter((products) => products.price !== ' ' && products.price !== '')
 
+console.log(productsWithoutPrices)
+
+const convertStringtoNumbers = productsWithoutPrices.map((product) => Number(product.price))
+
+console.log(convertStringtoNumbers)
+
+const totalPrice = convertStringtoNumbers.reduce((sum, a) => sum = sum + a, 0)
+
+console.log(totalPrice)
