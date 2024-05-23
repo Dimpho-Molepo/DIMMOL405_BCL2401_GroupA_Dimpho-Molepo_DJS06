@@ -1,12 +1,14 @@
+// A list of provinces:
+const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', 'KwaZulu-Natal', 'Free State']
+
+// A list of names:
+const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie']
+
 // Exercises
 
 // 1: ForEach Basics
 names.forEach((name) => console.log(name))
-province.forEach((province) => console.log(province))
+provinces.forEach((province) => console.log(province))
 
-let index = 0
-names.forEach((name) => {
-  console.log(`${name} (${provinces[index]})`)
-  index = index + 1
-})
+names.forEach((name, index) => console.log(`${name} (${provinces[index]})`))
 
