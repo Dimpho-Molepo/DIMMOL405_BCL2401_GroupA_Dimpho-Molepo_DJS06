@@ -23,3 +23,12 @@ console.log(provinces.sort())
 
 // 5: Filtering Cape
 console.log(provinces.filter((province) => !province.includes('Cape')))
+
+// 6: Finding 'S'
+console.log(names.map((name) => name.split('').some((s) => s.includes('S'))))
+
+// 7: Creating Object Mapping
+console.log(names.reduce((acc, name, index) => {
+    acc[name] = provinces[index]
+    return acc
+  }, {}))
