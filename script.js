@@ -31,4 +31,21 @@ console.log(names.map((name) => name.split('').some((s) => s.includes('S'))))
 console.log(names.reduce((acc, name, index) => {
     acc[name] = provinces[index]
     return acc
-  }, {}))
+}, {}))
+
+// A list of products with prices:
+const products = [
+    { product: 'banana', price: "2" },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: "8" },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+]
+
+// Advanced Exercises (Single `console.log` Execution)
+
+// 1: Log Products
+products.forEach((products) => console.log(products.product))
+
+
