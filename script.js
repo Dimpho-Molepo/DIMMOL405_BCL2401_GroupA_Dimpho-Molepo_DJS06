@@ -48,7 +48,10 @@ const products = [
 // 1: Log Products
 products.forEach((products) => console.log(products.product))
 
-// 2: Price Manipulation
+// 2: Filter by Name Length
+console.log(products.filter((products) => products.product.length >= 5))
+
+// 3: Price Manipulation
 const productsWithoutPrices = products.filter((products) => products.price !== ' ' && products.price !== '')
 
 console.log(productsWithoutPrices)
