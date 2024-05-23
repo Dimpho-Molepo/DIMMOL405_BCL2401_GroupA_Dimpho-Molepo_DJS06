@@ -17,3 +17,6 @@ console.log(provinces.map((province) => province.toUpperCase()))
 
 // 3: Name Lengths
 console.log(names.map((name) => name.length))
+
+// 4: Sorting
+console.log(provinces.sort())
