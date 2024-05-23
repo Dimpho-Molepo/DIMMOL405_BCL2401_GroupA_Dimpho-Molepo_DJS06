@@ -72,3 +72,13 @@ const lowestPriceItem = sortedProducts[0];
 
 const result = `Highest: ${highestPriceItem.product} (R${highestPriceItem.price}). Lowest: ${lowestPriceItem.product} (R${lowestPriceItem.price}).`;
 console.log(result);
+
+
+// 6: Object Transformation
+console.log(products.reduce((acc, product) => {
+const entries = Object.entries(product);
+entries[0][0] = 'name';
+entries[1][0] = 'cost';
+acc.push(Object.fromEntries(entries));
+return acc;
+}, []));
