@@ -52,18 +52,7 @@ products.forEach((products) => console.log(products.product))
 console.log(products.filter((products) => products.product.length <= 5))
 
 // 3: Price Manipulation
-const productsWithoutPrices = products.filter((products) => products.price !== ' ' && products.price !== '')
-
-console.log(productsWithoutPrices)
-
-const convertStringtoNumbers = productsWithoutPrices.map((product) => Number(product.price))
-
-console.log(convertStringtoNumbers)
-
-const totalPrice = convertStringtoNumbers.reduce((sum, a) => sum = sum + a, 0)
-
-console.log(totalPrice)
-
+console.log(products.filter((products) => products.price !== ' ' && products.price !== '').map((product) => Number(product.price)).reduce((sum, a) => sum = sum + a, 0))
 
 // 4: Concatenate Product Names
 console.log(products.reduce((sum, a) => sum = sum  + a.product, ''))
