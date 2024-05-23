@@ -60,3 +60,7 @@ console.log(convertStringtoNumbers)
 const totalPrice = convertStringtoNumbers.reduce((sum, a) => sum = sum + a, 0)
 
 console.log(totalPrice)
+
+
+// 4: Concatenate Product Names
+console.log(products.reduce((sum, a) => sum = sum  + a.product, ''))
