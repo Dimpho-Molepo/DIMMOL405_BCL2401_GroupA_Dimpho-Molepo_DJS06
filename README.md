@@ -53,3 +53,6 @@ This project is designed to enhance our understanding with higher-order function
 ### Challenges
 - I had a hard time understanding the logic behind the advanced exercises particulaly no: 6. I had to read the instructions multiple times to fully grasp the desired result.
 - Also I could not understand what the instructions meant when they said we must "wrap your logic in a single `console.log` statement:". I felt like this is such an ambigous statement because the question that came to my mind was are we supposed to wrap every task from no:1 to no:6 inside one console log or each and every task show be wrapped in its individual console log?
+
+## Author
+Dimpho Molepo
